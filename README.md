@@ -23,6 +23,7 @@ $ docker compose down
 
 File Structure
 
+.
 ├── README.md               <- The top-level README for developers using this project
 ├── Dockerfile              <- Docker image to run environment
 ├── config.yml              <- Configuration file
@@ -35,12 +36,12 @@ File Structure
 ├── notebooks/              <- Jupyter notebooks for exploration analysis
 └── src/                    <- Source code for use in this project
     ├── preprocess/         <- Scripts to turn raw data into features for modeling
-    │   └── prepare_data.py    
-    ├── model/              <- Scripts to train models and apply models  
-    │   └── model.py    
-    ├── evaluate/           <- Scripts to validate and apply the model to data  
-    │   └── evaluate.py    
-    ├── visualization/ <- Scripts to create exploratory and results-oriented visualizations
-    │   └── visualize.py    
-    └── common/        <- Scripts shared among other modules
+    │   └── prepare_data.py
+    ├── model/              <- Scripts to train models and apply models
+    │   └── model.py
+    ├── evaluate/           <- Scripts to validate and apply the model to data
+    │   └── evaluate.py
+    ├── visualization/      <- Scripts to create exploratory and results-oriented visualizations
+    │   └── visualize.py
+    └── common/             <- Scripts shared among other modules
         └── tools.py
