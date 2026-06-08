@@ -19,8 +19,7 @@ def load_data(config):
 
 def pre_process_data(config):    
     df = load_data(config)
-    print("Pre processing data...")
-    df = pre.convert_meterno_to_string(df)
+    print("Pre processing data...")    
     df = pre.cast_and_rename_columns(df)
     df = pre.process_missing_values(df, columns=["PUBLISHEDPACKET", "GAPREQPACKET"], processing_method="replace", value=0)
     df = pre.create_gapreq_efficiency_column(df)

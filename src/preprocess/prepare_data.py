@@ -76,21 +76,3 @@ def create_gapreq_efficiency_column(dataframe):
         ) * 100
     ).round(2)
     return dataframe
-
-import pandas as pd
-
-def convert_meterno_to_string(dataframe):
-    dataframe["METERNO"] = dataframe["METERNO"].astype(object)
-
-    numeric_mask = pd.to_numeric(
-        dataframe["METERNO"],
-        errors="coerce"
-    ).notna()
-    dataframe.loc[numeric_mask, "METERNO"] = (
-        pd.to_numeric(
-            dataframe.loc[numeric_mask, "METERNO"]
-        )
-        .astype("Int64")
-        .astype(str)
-    )
-    return dataframe

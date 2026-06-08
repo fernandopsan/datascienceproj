@@ -2,9 +2,7 @@ import matplotlib.pyplot as plt
 from sklearn.ensemble import RandomForestRegressor
 
 def prepare_data(df):
-    df_1 = df
-    df_1 = df_1.drop(columns=['METERNO'])
-    df_1 = df_1.drop(columns=['METERID'])
+    df_1 = df    
     df_1 = df_1.drop(columns=['INTERVALDATE'])
     df_1 = df_1.drop(columns=['INFORMATION'])
     df_1['DAY'] = df['INTERVALDATE'].dt.day
