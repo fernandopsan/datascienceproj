@@ -23,39 +23,19 @@ $ docker compose down
 
 ## Project Structure
 
-<<<<<<< HEAD
-```text
-=======
->>>>>>> bdbb1cb (Adjust readme)
 .
 ├── README.md               <- The top-level README for developers using this project
 ├── Dockerfile              <- Docker image to run environment
 ├── config.yml              <- Configuration file
 ├── .gitignore              <- Git ignore file
-<<<<<<< HEAD
-├── data/
-=======
 ├── data/                   <- Folder to store the CSV files
->>>>>>> bdbb1cb (Adjust readme)
-│   ├── INTERVALDATA.CSV    <- The original, immutable data dump
-│   ├── interim/            <- Intermediate data that has been transformed
+│   ├── INTERVALDATA.CSV    <- The original, immutable data dump│   
 │   └── .gitignore
 ├── models/                 <- Trained models
 ├── notebooks/              <- Jupyter notebooks for exploration analysis
 └── src/
     ├── preprocess/
     │   └── prepare_data.py
-<<<<<<< HEAD
-    ├── model/
-    │   └── model.py
-    ├── evaluate/
-    │   └── evaluate.py
-    ├── visualization/
-    │   └── visualize.py
-    └── common/
-        └── tools.py
-```
-=======
     ├── model/              <- Scripts to train models and apply models
     │   └── model.py
     ├── evaluate/           <- Scripts to validate and apply the model to data
@@ -64,4 +44,3 @@ $ docker compose down
     │   └── visualize.py
     └── common/             <- Scripts shared among other modules
         └── tools.py
->>>>>>> bdbb1cb (Adjust readme)
