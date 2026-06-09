@@ -1,5 +1,8 @@
 # Interval Data Analysis
 
+This project aims to analyze the loss of data packets sent from endpoints to the Command Center.
+This loss can have several causes, such as problems with equipment, the communication network, and the management system. More data may be included in the future.
+
 ## Requirements
 
  - Docker
