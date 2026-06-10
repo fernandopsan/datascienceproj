@@ -34,8 +34,7 @@ $ docker compose down
 ├── .gitignore              <- Git ignore file
 ├── data/
 │   ├── INTERVALDATA.CSV    <- The original, immutable data dump
-│   
-├── models/                 <- Trained models
+│
 ├── notebooks/              <- Jupyter notebooks for exploration analysis
 └── src/
     ├── preprocess/
